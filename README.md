@@ -182,7 +182,7 @@ Settings -> Keyboard -> Shorcuts -> Custom
 ## restart Wifi
 
 * Instalar `Alacarte`
-* Crear un nuevo comando `Restar Wifi`
+* Crear un nuevo comando `Restart Wifi`
 * El comando es `bash -c 'service network-manager restart'`
 
 ## nm-applet
