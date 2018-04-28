@@ -1,38 +1,30 @@
 # Generales
 
 ## Claves
-```
+```bash
 Dropbox/homejuanlb/.ssh
-```
-a
-```
+# copiar a:
 /home/juanlb/.ssh
 ```
 
 ## Credenciales AWS
-```
+```bash
 Dropbox/homejuanlb/.aws
-```
-a:
-```
+# copiar a:
 /home/juanlb/.aws
 ```
 
 ## Consola
-```
+```bash
 Dropbox/homejuanlb/.zsh_history
-```
-a:
-```
+# copiar a:
 /home/juanlb/.zsh_history
 ```
 ## VIM
-```
+```bash
 Github/vim/.vim
 Github/vim/.vimrc
-```
-a:
-```
+# copiar a:
 /home/juanlb/.vim
 /home/juanlb/.vimrc
 ```
@@ -57,24 +49,30 @@ Seguir:
 * https://neal.codes/blog/adding-mac-like-touch-gestures-to-elementary-os
 
 Copiar el archivo:
-```
+```bash
 Github/multitouch/libinput-gestures.conf
-```
-a:
-```
+# copiar a:
 /home/juanlb/.config/libinput-gestures.conf
 ```
+#### Esto es de mi History
+```bash
+  git clone http://github.com/bulletmark/libinput-gestures
+  cd libinput-gestures
+  sudo apt install libinput-tools xdotool
+  libinput-gestures-setup autostart
+  gedit ~/.config/libinput-gestures.conf
 
+```
 
 ## Escalado de pantalla
 Copiar el archivo:
-```
+```bash
 Github/hidpi/scale_screen.sh
-```
-a:
-```
+# copiar a:
 /usr/local/bin/scale_screen.sh
 ```
+Agreagarlo en `Startup Apps`
+
 ## Bateria
 Powertop y TLP
 
@@ -83,6 +81,8 @@ Powertop y TLP
 ### rbenv con install
 * https://github.com/rbenv/rbenv#installation
 * https://github.com/rbenv/ruby-build#installation
+
+Instalar `Ruby 2.3.1`
 
 Crear este link:
 
@@ -110,10 +110,49 @@ wget --no-check-certificate -q  https://raw.github.com/petervanderdoes/gitflow-a
 * Remmina
 * Firefox
 * Transmission BitTorrent
+* gnome-disk-utility
+* recordmydesktop
+* spotify-client
+* htop
+* cups-pdf
+* imagemagick libmagickwand-dev libmagic-dev  build-essential
+* nodejs
+* elementaryplus
+* powertop
+* redis-server redis
+* knockd
+* Virtual Box
+* Google Keep
 
 ### Visual Studio Code
 
-### Configuraciones Elementary-OS
+#### ctrl+shift+D
+* File > Preferences > Keyboard Shortcuts
+* Editar `keybindings.json`
+```json
+    {
+        "key": "ctrl+shift+d",
+        "command": "editor.action.copyLinesDownAction",
+        "when": "editorTextFocus"
+    }
+```
+
+## Configuraciones Elementary-OS
+
+
+### Conexiones wifi
+Como `root`
+```bash
+systemctl stop NetworkManager.service 
+# Copiar Dropbox/homejuanlb/system-connections.tar.gz a /etc/NetworkManager
+cd /etc/NetworkManager
+tar -xzf system-connections.tar.gz
+systemctl start NetworkManager.service 
+```
+
+### Teclado
+
+* English (US, International with dead keys)
 
 #### Workspaces dinámicos
 https://dysonsimmons.com/indicator-workspaces/
@@ -125,7 +164,7 @@ Multitasking-Nothing
 
 #### Telegram-Desktop
 No funciona con Acentos
-Agregar en start up apps:
+Agregar en `Startup Apps`:
 
 ```
 Github/Telegram/TelegramAcentos.sh
@@ -139,7 +178,7 @@ Settings -> Keyboard -> Shorcuts -> Custom
 /usr/bin/gedit -> CTRL-G
 ```
 ## nm-applet
-En start up apps estba:
+En `Startup Apps` estba:
 ```
 /usr/bin/nm-applet
 ```
