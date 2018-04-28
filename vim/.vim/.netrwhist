@@ -1,0 +1,11 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhist_cnt =9
+let g:netrw_dirhist_1='/tmp'
+let g:netrw_dirhist_2='/home/juanlb'
+let g:netrw_dirhist_3='/home/partition_data/juanlb_files/Snappler/lapiedad'
+let g:netrw_dirhist_4='/home/partition_data/juanlb_files/Snappler/lapiedad/app'
+let g:netrw_dirhist_5='/home/partition_data/juanlb_files/Snappler/lapiedad/app/controllers'
+let g:netrw_dirhist_6='/home/partition_data/juanlb_files/Snappler/lapiedad'
+let g:netrw_dirhist_7='/home/partition_data/juanlb_files/Snappler/lapiedad/app'
+let g:netrw_dirhist_8='/home/partition_data/juanlb_files/Snappler/lapiedad/app/controllers'
+let g:netrw_dirhist_9='/home/juanlb'
