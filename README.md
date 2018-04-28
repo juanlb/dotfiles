@@ -123,6 +123,7 @@ wget --no-check-certificate -q  https://raw.github.com/petervanderdoes/gitflow-a
 * knockd
 * Virtual Box
 * Google Keep
+* Filezilla
 
 ### Visual Studio Code
 
@@ -177,6 +178,13 @@ Settings -> Keyboard -> Shorcuts -> Custom
 ```
 /usr/bin/gedit -> CTRL-G
 ```
+
+## restart Wifi
+
+* Instalar `Alacarte`
+* Crear un nuevo comando `Restar Wifi`
+* El comando es `bash -c 'service network-manager restart'`
+
 ## nm-applet
 En `Startup Apps` estba:
 ```
