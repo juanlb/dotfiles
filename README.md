@@ -18,8 +18,21 @@
 * Instalar la adaptacion HiDPI
 * Claves `.ssh`
 * Claves `AWS`
+* Caja con un solo click
+* Hotcorners
+* zsh
+* rbenv
 
 # Generales
+
+## ZSH
+* https://github.com/robbyrussell/oh-my-zsh/wiki/Installing-ZSH#install-and-set-up-zsh-as-default
+
+```bash
+sudo apt-get install zsh
+chsh -s $(which zsh)
+```
+
 
 ## Claves
 ```bash
@@ -73,7 +86,7 @@ sudo add-apt-repository ppa:philip.scott/elementary-tweaks
 sudo apt-get update
 sudo apt-get install elementary-tweaks
 ```
-Luego ejecutar `Tweaks`
+Luego en el panel de control se verá `Tweaks`
 
 * Files
 * Single click
