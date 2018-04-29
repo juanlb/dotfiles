@@ -1,3 +1,20 @@
+# Instalación Dell XPS 13
+
+* F12 en boot
+* Legacy boot -> USB Storage Device
+
+## Opciones de disco
+
+**Device for boot loader instasllation**
+* `/dev/nvme0n1` (el que aparece por defecto)
+
+# Pasos
+
+* Correr el script que monta los `links simbolicos`:`./crear_links.sh`
+* Instalar `Eddy` de la tienda de apps
+* Instalar Chrome
+* Instalar la adaptacion HiDPI
+
 # Generales
 
 ## Claves
