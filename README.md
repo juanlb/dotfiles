@@ -10,10 +10,14 @@
 
 # Pasos
 
+* sudo apt-get update
+* sudo apt-get upgrade
 * Correr el script que monta los `links simbolicos`:`./crear_links.sh`
 * Instalar `Eddy` de la tienda de apps
 * Instalar Chrome
 * Instalar la adaptacion HiDPI
+* Claves `.ssh`
+* Claves `AWS`
 
 # Generales
 
@@ -59,6 +63,20 @@ https://teamsql.io/
 https://github.com/juan-lb/docker-compose-rails
 
 # Configuraciones para Dell XPS 13 (9360)
+
+## Administrador de archivos (Caja) con un solo click
+* https://elementaryos.stackexchange.com/questions/38/configure-files-to-use-double-click
+
+```bash
+sudo apt-get install software-properties-common
+sudo add-apt-repository ppa:philip.scott/elementary-tweaks
+sudo apt-get update
+sudo apt-get install elementary-tweaks
+```
+Luego ejecutar `Tweaks`
+
+* Files
+* Single click
 
 ## Multitouch
 Seguir:
