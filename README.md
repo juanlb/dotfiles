@@ -24,7 +24,8 @@
 * sudo apt-get install git
 * Passwords wifi
 * rbenv
-* Algun ruby
+* Algun ruby (en caso de no tener la carpeta `.rbenv` ya instalada)
+* Multitouch
 
 # Generales
 
@@ -115,12 +116,12 @@ Github/multitouch/libinput-gestures.conf
 ```
 #### Esto es de mi History
 ```bash
-  git clone http://github.com/bulletmark/libinput-gestures
-  cd libinput-gestures
-  sudo apt install libinput-tools xdotool
-  libinput-gestures-setup autostart
-  gedit ~/.config/libinput-gestures.conf
-
+git clone http://github.com/bulletmark/libinput-gestures
+cd libinput-gestures
+sudo make install
+sudo apt install libinput-tools xdotool
+sudo gpasswd -a $USER input
+libinput-gestures-setup autostart
 ```
 
 ## Escalado de pantalla
