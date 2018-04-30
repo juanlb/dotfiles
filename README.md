@@ -21,7 +21,10 @@
 * Caja con un solo click
 * Hotcorners
 * zsh
+* sudo apt-get install git
+* Passwords wifi
 * rbenv
+* Algun ruby
 
 # Generales
 
@@ -32,7 +35,21 @@
 sudo apt-get install zsh
 chsh -s $(which zsh)
 ```
+Logout - Login
 
+Copiar
+```bash
+Github/consola/.oh-my-zsh
+Github/consola/.zshr
+a:
+/home/juanlb/
+```
+Copiar
+```bash
+Dropbox/homejuanlb/.zsh_history
+# copiar a:
+/home/juanlb/.zsh_history
+```
 
 ## Claves
 ```bash
@@ -48,12 +65,6 @@ Dropbox/homejuanlb/.aws
 /home/juanlb/.aws
 ```
 
-## Consola
-```bash
-Dropbox/homejuanlb/.zsh_history
-# copiar a:
-/home/juanlb/.zsh_history
-```
 ## VIM
 ```bash
 Github/vim/.vim
@@ -130,14 +141,17 @@ Powertop y TLP
 * https://github.com/rbenv/rbenv#installation
 * https://github.com/rbenv/ruby-build#installation
 
+```bash
+sudo apt-get install -y libssl-dev libreadline-dev zlib1g-dev
+```
+
 Instalar `Ruby 2.3.1`
 
-Crear este link:
-
+Si existe este directorio: `/home/partition_data/juanlb_files/rbenv_dir`, crear este link:
+```bash
+ln -s /home/partition_data/juanlb_files/rbenv_dir .rbenv
 ```
-/home/juanlb/.rbenv -> /home/partition_data/juanlb_files/rbenv_dir
-```
-Borrar `/home/partition_data/juanlb_files/rbenv_dir` y volverlo a crear para no arrastrar datos viejos.
+Sino crearlo y comenzar la instalación de cero
 
 
 ### Docker y docker-compose
@@ -189,7 +203,7 @@ wget --no-check-certificate -q  https://raw.github.com/petervanderdoes/gitflow-a
 ## Configuraciones Elementary-OS
 
 
-### Conexiones wifi
+### Passwords wifi
 Como `root`
 ```bash
 systemctl stop NetworkManager.service 
