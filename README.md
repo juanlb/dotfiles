@@ -38,6 +38,8 @@
 * Visual Studio Code
 * Firefox
 * Dropbox
+* Elementary Plus
+* Spotify Client
 
 # Generales
 
