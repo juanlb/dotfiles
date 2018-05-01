@@ -40,6 +40,7 @@
 * Dropbox
 * Elementary Plus
 * Spotify Client
+* Quitar Safe Paste al terminal
 
 # Generales
 
@@ -89,6 +90,15 @@ Github/vim/.vimrc
 /home/juanlb/.vimrc
 ```
 ## Terminal
+
+Quitar el Safe Paste:
+https://www.fosslinux.com/496/how-to-disable-unsafe-copy-paste-warning-while-using-terminal-in-elementary-os.htm
+```bash
+sudo apt-get install dconf-tools
+```
+Abrir `dconf`
+* org > pantheon > terminal > settings > unsafe paste alert
+
 https://hyper.is
 ```
 gsettings set org.gnome.desktop.default-applications.terminal exec hyper
