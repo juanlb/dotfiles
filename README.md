@@ -30,6 +30,8 @@
 * TeamSQL
 * VIM
 * Docker y docker-compose
+* Dockerizar rails apps
+* Git Flow
 
 # Generales
 
@@ -195,31 +197,22 @@ $ docker-compose --version
 wget --no-check-certificate -q  https://raw.github.com/petervanderdoes/gitflow-avh/develop/contrib/gitflow-installer.sh && sudo bash gitflow-installer.sh install stable; rm gitflow-installer.sh
 ```
 ### sudo apt install
-* Koloupaint
-* git
-* openssh-server
-* Gedit
-* Clipit
-* Mattermost-Desktop
-* Telegram-Desktop
+```bash
+sudo apt install transmission zsh libinput-tools xdotool wmctrl vlc mysql-server vim git kolourpaint4 openssh-server clipit gnome-disk-utility transmission recordmydesktop htop cups-pdf imagemagick libmagickwand-dev libmagic-dev build-essential redis-server knockd filezilla
+```
+
+### Otras apps
+* Mattermost
+* Telegram
 * Dropbox
 * Remmina
 * Firefox
-* Transmission BitTorrent
-* gnome-disk-utility
-* recordmydesktop
-* spotify-client
-* htop
-* cups-pdf
-* imagemagick libmagickwand-dev libmagic-dev  build-essential
-* nodejs
-* elementaryplus
-* powertop
-* redis-server redis
-* knockd
-* Virtual Box
+* Spotify client
+* node.js
+* Elementary plus
+* Powertop
+* Virtualbox
 * Google Keep
-* Filezilla
 
 ### Visual Studio Code
 
