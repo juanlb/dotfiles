@@ -26,6 +26,7 @@
 * rbenv
 * Algun ruby (en caso de no tener la carpeta `.rbenv` ya instalada)
 * Multitouch
+* Workspaces dinámicos
 
 # Generales
 
