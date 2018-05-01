@@ -249,6 +249,10 @@ $ sudo add-apt-repository ppa:popye/eos-window-switcher
 $ sudo apt-get update
 $ sudo apt-get install gala-eos-window-switcher
 ```
+Después `dconf Editor`
+* /org/pantheon/desktop/gala/plugins/elementary-alt-tab/
+Y modificar `preview-in-switcher`
+
 
 ### Visual Studio Code
 
