@@ -43,6 +43,7 @@
 * Quitar Safe Paste al terminal
 * VirtualBox
 * Alt Tab Switcher
+* Indicator Multiload
 
 # Generales
 
@@ -225,7 +226,7 @@ wget --no-check-certificate -q  https://raw.github.com/petervanderdoes/gitflow-a
 ```
 ### sudo apt install
 ```bash
-sudo apt install transmission zsh libinput-tools xdotool wmctrl vlc mysql-server vim git kolourpaint4 openssh-server clipit gnome-disk-utility transmission recordmydesktop htop cups-pdf imagemagick libmagickwand-dev libmagic-dev build-essential redis-server knockd filezilla gedit dconf-tools baobab usb-creator-gtk
+sudo apt install transmission zsh libinput-tools xdotool wmctrl vlc mysql-server vim git kolourpaint4 openssh-server clipit gnome-disk-utility transmission recordmydesktop htop cups-pdf imagemagick libmagickwand-dev libmagic-dev build-essential redis-server knockd filezilla gedit dconf-tools baobab usb-creator-gtk gnome-system-monitor
 ```
 
 ### Otras apps
@@ -240,6 +241,14 @@ sudo apt install transmission zsh libinput-tools xdotool wmctrl vlc mysql-server
 * Powertop
 * Virtualbox
 * Google Keep
+
+### Indicator Multiload
+* https://elementaryos.stackexchange.com/questions/40/how-can-i-show-performance-graphs-in-wingpanel
+```bash
+sudo add-apt-repository -y ppa:indicator-multiload/stable-daily
+sudo apt update
+sudo apt install indicator-multiload
+```
 
 ### Alt Tab Switcher
 
