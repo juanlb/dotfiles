@@ -41,6 +41,7 @@
 * Elementary Plus
 * Spotify Client
 * Quitar Safe Paste al terminal
+* VirtualBox
 
 # Generales
 
@@ -223,7 +224,7 @@ wget --no-check-certificate -q  https://raw.github.com/petervanderdoes/gitflow-a
 ```
 ### sudo apt install
 ```bash
-sudo apt install transmission zsh libinput-tools xdotool wmctrl vlc mysql-server vim git kolourpaint4 openssh-server clipit gnome-disk-utility transmission recordmydesktop htop cups-pdf imagemagick libmagickwand-dev libmagic-dev build-essential redis-server knockd filezilla gedit dconf-tools
+sudo apt install transmission zsh libinput-tools xdotool wmctrl vlc mysql-server vim git kolourpaint4 openssh-server clipit gnome-disk-utility transmission recordmydesktop htop cups-pdf imagemagick libmagickwand-dev libmagic-dev build-essential redis-server knockd filezilla gedit dconf-tools baobab usb-creator-gtk
 ```
 
 ### Otras apps
