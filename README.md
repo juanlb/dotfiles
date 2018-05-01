@@ -27,6 +27,9 @@
 * Algun ruby (en caso de no tener la carpeta `.rbenv` ya instalada)
 * Multitouch
 * Workspaces dinámicos
+* TeamSQL
+* VIM
+* Docker y docker-compose
 
 # Generales
 
