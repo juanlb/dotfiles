@@ -152,6 +152,13 @@ Powertop y TLP
 
 # Aplicaciones
 
+### Dropbox
+Una vez instalado, borrar el start up app que se crea y agregar este:
+```bash
+env XDG_CURRENT_DESKTOP=Unity QT_STYLE_OVERRIDE='' dropbox start
+```
+Sino el ícono en la barra de tareas se ve mal
+
 ### rbenv con install
 * https://github.com/rbenv/rbenv#installation
 * https://github.com/rbenv/ruby-build#installation
