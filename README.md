@@ -42,6 +42,7 @@
 * Spotify Client
 * Quitar Safe Paste al terminal
 * VirtualBox
+* Alt Tab Switcher
 
 # Generales
 
@@ -239,6 +240,15 @@ sudo apt install transmission zsh libinput-tools xdotool wmctrl vlc mysql-server
 * Powertop
 * Virtualbox
 * Google Keep
+
+### Alt Tab Switcher
+
+* https://github.com/p0pye/gala-elementary-alt-tab-switcher
+```bash
+$ sudo add-apt-repository ppa:popye/eos-window-switcher
+$ sudo apt-get update
+$ sudo apt-get install gala-eos-window-switcher
+```
 
 ### Visual Studio Code
 
