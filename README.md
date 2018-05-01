@@ -15,13 +15,13 @@
 * Correr el script que monta los `links simbolicos`:`./crear_links.sh`
 * Instalar `Eddy` de la tienda de apps
 * Instalar Chrome
+* apt install general
 * Instalar la adaptacion HiDPI
 * Claves `.ssh`
 * Claves `AWS`
 * Caja con un solo click
 * Hotcorners
 * zsh
-* sudo apt-get install git
 * Passwords wifi
 * rbenv
 * Algun ruby (en caso de no tener la carpeta `.rbenv` ya instalada)
@@ -32,6 +32,8 @@
 * Docker y docker-compose
 * Dockerizar rails apps
 * Git Flow
+* Configurar Gedit (short cut y estilo)
+* Mattermost
 
 # Generales
 
@@ -198,7 +200,7 @@ wget --no-check-certificate -q  https://raw.github.com/petervanderdoes/gitflow-a
 ```
 ### sudo apt install
 ```bash
-sudo apt install transmission zsh libinput-tools xdotool wmctrl vlc mysql-server vim git kolourpaint4 openssh-server clipit gnome-disk-utility transmission recordmydesktop htop cups-pdf imagemagick libmagickwand-dev libmagic-dev build-essential redis-server knockd filezilla
+sudo apt install transmission zsh libinput-tools xdotool wmctrl vlc mysql-server vim git kolourpaint4 openssh-server clipit gnome-disk-utility transmission recordmydesktop htop cups-pdf imagemagick libmagickwand-dev libmagic-dev build-essential redis-server knockd filezilla gedit
 ```
 
 ### Otras apps
