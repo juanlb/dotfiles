@@ -160,7 +160,36 @@ Sino crearlo y comenzar la instalación de cero
 
 
 ### Docker y docker-compose
-Siempre cambian, recordar lo de quitar `sudo`
+#### Docker
+```bash
+$ sudo apt-get install \
+    apt-transport-https \
+    ca-certificates \
+    curl \
+    software-properties-common
+$ curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -
+$ sudo apt-key fingerprint 0EBFCD88
+```
+Para `Loki`
+```bash
+$ sudo add-apt-repository \
+   "deb [arch=amd64] https://download.docker.com/linux/ubuntu \
+   xenial \
+   stable"
+$ sudo apt-get update
+$ sudo apt-get install docker-ce
+```
+Sacar `sudo`
+```bash
+$ sudo usermod -aG docker $USER
+```
+Logout y login
+#### docker-compose
+```bash
+$ sudo curl -L https://github.com/docker/compose/releases/download/1.21.0/docker-compose-$(uname -s)-$(uname -m) -o /usr/local/bin/docker-compose
+$ sudo chmod +x /usr/local/bin/docker-compose
+$ docker-compose --version
+```
 ### git flow
 ```
 wget --no-check-certificate -q  https://raw.github.com/petervanderdoes/gitflow-avh/develop/contrib/gitflow-installer.sh && sudo bash gitflow-installer.sh install stable; rm gitflow-installer.sh
