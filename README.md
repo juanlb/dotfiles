@@ -34,6 +34,10 @@
 * Git Flow
 * Configurar Gedit (short cut y estilo)
 * Mattermost
+* Telegram y corrección de acentos
+* Visual Studio Code
+* Firefox
+* Dropbox
 
 # Generales
 
