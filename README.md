@@ -44,6 +44,7 @@
 * VirtualBox
 * Alt Tab Switcher
 * Indicator Multiload
+* Go For It
 
 # Generales
 
@@ -241,6 +242,16 @@ sudo apt install transmission zsh libinput-tools xdotool wmctrl vlc mysql-server
 * Powertop
 * Virtualbox
 * Google Keep
+
+### Go For It
+
+* https://github.com/mank319/Go-For-It
+
+```bash
+sudo add-apt-repository ppa:go-for-it-team/go-for-it-daily && sudo apt-get update 
+sudo apt-get install go-for-it
+```
+
 
 ### Indicator Multiload
 * https://elementaryos.stackexchange.com/questions/40/how-can-i-show-performance-graphs-in-wingpanel
