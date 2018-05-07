@@ -1,0 +1,47 @@
+Tengo que rescatar:
+
+alias de bash para
+docker-compose
+git
+git flow
+
+configuración de Vim
+
+Gestos con tres dedos para la compu
+
+HiDPI configuración automática
+
+Tener workspaces fijos
+
+
+Instalar
+Docker
+Docker compose
+rbenv
+
+mysql (maria db)
+
+Emulador de terminal
+
+MySSH
+
+
+Configuración de las exquinas automaticas del escritorio
+
+Temas para gedit oscuro y plugins
+shortcut para que gedit se abra con CTRL+G
+
+
+Disco de Virtual box
+Balsamiq?
+Clipit 1.4.2
+dropbox
+
+impresion PDF
+KolorPaint
+Baobab
+startup disk crator
+bash: flecha para arriba y autocompletar
+musicar
+
+Guardar wifi

@@ -44,6 +44,7 @@
 * VirtualBox
 * Alt Tab Switcher
 * Indicator Multiload
+* Configurar calendario con google
 * Go For It
 
 # Generales
@@ -242,6 +243,13 @@ sudo apt install transmission zsh libinput-tools xdotool wmctrl vlc mysql-server
 * Powertop
 * Virtualbox
 * Google Keep
+
+### Calendario con Google
+
+Se agrega con la contraseña única de google para la App
+
+* https://elementaryos.stackexchange.com/questions/10048/sync-apple-calendar-google-calendar-into-native-calendar-application
+
 
 ### Go For It
 

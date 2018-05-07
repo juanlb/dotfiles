@@ -1,0 +1,6 @@
+sudo apt install transmission zsh libinput-tools xdotool wmctrl vlc mysql-server vim git kolourpaint4 openssh-server clipit gnome-disk-utility transmission recordmydesktop htop cups-pdf imagemagick libmagickwand-dev libmagic-dev build-essential redis-server knockd filezilla dconf-tools
+
+
+alt-tab switcher
+https://github.com/p0pye/gala-elementary-alt-tab-switcher
+
