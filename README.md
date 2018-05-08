@@ -46,6 +46,7 @@
 * Indicator Multiload
 * Configurar calendario con google
 * Go For It
+* Libre Office
 
 # Generales
 
@@ -243,6 +244,22 @@ sudo apt install transmission zsh libinput-tools xdotool wmctrl vlc mysql-server
 * Powertop
 * Virtualbox
 * Google Keep
+
+### Libre Office
+
+Primero instalar JRE:
+
+
+```bash
+sudo add-apt-repository ppa:libreoffice/ppa
+sudo apt-get update && sudo apt-get -y dist-upgrade
+sudo apt-get install libreoffice
+```
+
+Ver si esto es necesario:
+```bash
+sudo apt-get install openjdk-8-jre
+```
 
 ### Calendario con Google
 
