@@ -19,6 +19,7 @@
 * Instalar la adaptacion HiDPI
 * Claves `.ssh`
 * Claves `AWS`
+* aws cli
 * Caja con un solo click
 * Hotcorners
 * zsh
@@ -87,6 +88,11 @@ Dropbox/homejuanlb/.aws
 /home/juanlb/.aws
 ```
 
+## aws cli
+```bash
+sudo apt-get install python-pip
+pip install awscli --upgrade --user
+```
 ## VIM
 ```bash
 Github/vim/.vim
