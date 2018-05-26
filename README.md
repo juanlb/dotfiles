@@ -46,8 +46,8 @@
 * Alt Tab Switcher
 * Indicator Multiload
 * Configurar calendario con google
-* Go For It
 * Libre Office
+* Remote mouse
 
 # Generales
 
@@ -267,22 +267,19 @@ Ver si esto es necesario:
 sudo apt-get install openjdk-8-jre
 ```
 
+### Remote mouse
+
+Bajar archivo
+
+http://www.remotemouse.net/downloads/RemoteMouse.tar.gz
+
+Seguir instrucciones para Ubuntu 14
+
 ### Calendario con Google
 
 Se agrega con la contraseña única de google para la App
 
 * https://elementaryos.stackexchange.com/questions/10048/sync-apple-calendar-google-calendar-into-native-calendar-application
-
-
-### Go For It
-
-* https://github.com/mank319/Go-For-It
-
-```bash
-sudo add-apt-repository ppa:go-for-it-team/go-for-it-daily && sudo apt-get update 
-sudo apt-get install go-for-it
-```
-
 
 ### Indicator Multiload
 * https://elementaryos.stackexchange.com/questions/40/how-can-i-show-performance-graphs-in-wingpanel
