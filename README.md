@@ -175,9 +175,13 @@ Powertop y TLP
 # Aplicaciones
 
 ### Dropbox
-Una vez instalado, borrar el start up app que se crea y agregar este:
+Una vez instalado, editar el start up app que se crea con este comando:
 ```bash
-env XDG_CURRENT_DESKTOP=Unity QT_STYLE_OVERRIDE='' dropbox start
+gnome-session-properties
+```
+de esta manera:
+```bash
+env XDG_CURRENT_DESKTOP=Unity QT_STYLE_OVERRIDE='' dropbox start -i
 ```
 Sino el ícono en la barra de tareas se ve mal
 
