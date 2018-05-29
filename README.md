@@ -183,6 +183,11 @@ de esta manera:
 ```bash
 env XDG_CURRENT_DESKTOP=Unity QT_STYLE_OVERRIDE='' dropbox start -i
 ```
+Después ejecutar este comando para que Dropbox no lo vuelva a cambiar:
+```bash
+chmod 400 ~/.config/autostart/dropbox.desktop
+```
+
 Sino el ícono en la barra de tareas se ve mal
 
 ### rbenv con install
