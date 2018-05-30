@@ -48,6 +48,7 @@
 * Configurar calendario con google
 * Libre Office
 * Remote mouse
+* Balsamiq
 
 # Generales
 
@@ -275,6 +276,31 @@ Ver si esto es necesario:
 ```bash
 sudo apt-get install openjdk-8-jre
 ```
+
+### Balsamiq
+
+Instalar WineHQ
+
+```bash
+sudo dpkg --add-architecture i386 
+
+wget -nc https://dl.winehq.org/wine-builds/Release.key
+sudo apt-key add Release.key
+sudo apt-add-repository https://dl.winehq.org/wine-builds/ubuntu/
+sudo apt-get update
+sudo apt-get install --install-recommends winehq-stable
+```
+El archivo está en:
+```
+Github/Balsamiq/Balsamiq_Mockups_3.5.15.exe
+```
+Instalar **PlayOnLinux** desde **AppCenter** e instalar.
+**NO** Actualizar AIR.
+
+**user**: `leexij@gmail.com`
+**pass**: `eNrzzU/OLi0odswsqslJTa3IzHJIz03MzNFLzs+tMTQyNrcwsTQyAIEa5xpDAIFxDy`
+
+Al `coso de arriba` le faltan 8k
 
 ### Remote mouse
 
