@@ -49,6 +49,7 @@
 * Libre Office
 * Remote mouse
 * Balsamiq
+* Postman
 
 # Generales
 
@@ -275,6 +276,34 @@ sudo apt-get install libreoffice
 Ver si esto es necesario:
 ```bash
 sudo apt-get install openjdk-8-jre
+```
+
+### Postman
+
+Bajar el tar:
+* https://app.getpostman.com/app/download/linux64
+
+Descomprimir en `/opt/`
+
+Y crear el acceso directo:
+
+```bash
+cd /usr/share/applications
+sudo touch postman.desktop
+sudo gedit postman.desktop
+```
+Contenido:
+```
+[Desktop Entry]
+Encoding=UTF-8
+Name=Postman
+Comment=Postman
+Exec=/opt/Postman/Postman
+Icon=/opt/Postman/app/resources/app/assets/icon.png
+Terminal=false
+Type=Application
+Categories=GNOME;Application;Development;
+StartupNotify=true
 ```
 
 ### Balsamiq
