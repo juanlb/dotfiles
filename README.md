@@ -50,6 +50,8 @@
 * Remote mouse
 * Balsamiq
 * Postman
+* TeamViewer Host (desde el sitio, es .deb)
+* Catfish (desde AppCenter)
 
 # Generales
 
