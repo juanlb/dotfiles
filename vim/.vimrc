@@ -1,36 +1,66 @@
-set number
-set relativenumber
-set hlsearch
-set splitbelow
-set splitright
+" Intall Vim-Plug:
+" curl -fLo ~/.vim/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
 
-execute pathogen#infect()
-autocmd StdinReadPre * let s:std_in=1
-autocmd VimEnter * if argc() == 0 && !exists("s:std_in") | NERDTree | endif
-autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
+call plug#begin('~/.vim/plugged')
+Plug 'scrooloose/nerdtree', { 'on': 'NERDTreeToggle' }
+Plug 'Xuyuanp/nerdtree-git-plugin'
+Plug 'tomtom/tcomment_vim'
+Plug 'ctrlpvim/ctrlp.vim'
+Plug 'tpope/vim-rails'
+Plug 'lifepillar/vim-mucomplete'
+Plug 'mkitt/tabline.vim'
+Plug 'slim-template/vim-slim'
+Plug 'lifepillar/vim-solarized8'
+Plug 'tpope/vim-fugitive'
+
+
+call plug#end()
+
+" -- Configurations --
+
+" Enable syntax highlighting
 syntax on
-colorscheme onedark
+
+" Don't wrap long lines
+set nowrap
+
+" Set Highlight
+set hlsearch
+
+" Use 2 spaces for tabs
+set expandtab
+set tabstop=2
+set softtabstop=2
+set shiftwidth=2
+set smarttab
+
+" Automatically remove all trailing whitespace
+autocmd BufWritePre * %s/\s\+$//e
+
+" Set default colorscheme to solarized
+set background=dark
+silent! colorscheme solarized8_high
 
 
-" For mouse click in NERDTree
-:set mouse=a
-let g:NERDTreeMouseMode=3 
+" Enable line numbers and don't make them any wider than necessary
+set number relativenumber numberwidth=2
 
-" Ale rubocop path
-let g:ale_ruby_rubocop_options=" --config /home/juanlb/Snappler/rubocop.yml"
-let g:lightline = {
-  \ 'colorscheme': 'onedark',
-  \ }
+" -- Mappings --
 
-" Tab switching
-map  <C-l> :tabn<CR>
-map  <C-h> :tabp<CR>
+" Toggle NERDTreeToggle
+nmap <Leader>g :NERDTreeToggle<CR>
 
-let NERDTreeShowHidden=1
-let g:ctrlp_show_hidden = 1
+" Switch between panes
+nmap <C-J> <C-W>j
+nmap <C-K> <C-W>k
+nmap <C-H> <C-W>h
+nmap <C-L> <C-W>l
 
-:set autoindent
-:set smartindent
+" Autocomplete MUcomplete
+set completeopt+=menuone,noselect
+let g:mucomplete#enable_auto_at_startup = 1
 
-set clipboard=unnamed
-:imap jj <Esc>
+
+" Map jj to be more handly
+imap jj <Esc>
+

@@ -99,11 +99,17 @@ pip install awscli --upgrade --user
 ```
 ## VIM
 ```bash
-Github/vim/.vim
 Github/vim/.vimrc
 # copiar a:
-/home/juanlb/.vim
 /home/juanlb/.vimrc
+```
+Instalar `vim-plug`:
+```
+curl -fLo ~/.vim/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+```
+Y luego entrando en `vim` ejecutar:
+```
+:PlugInstall
 ```
 ## Terminal
 
@@ -313,7 +319,7 @@ StartupNotify=true
 Instalar WineHQ
 
 ```bash
-sudo dpkg --add-architecture i386 
+sudo dpkg --add-architecture i386
 
 wget -nc https://dl.winehq.org/wine-builds/Release.key
 sudo apt-key add Release.key
@@ -387,11 +393,11 @@ Y modificar `preview-in-switcher`
 ### Passwords wifi
 Como `root`
 ```bash
-systemctl stop NetworkManager.service 
+systemctl stop NetworkManager.service
 # Copiar Dropbox/homejuanlb/system-connections.tar.gz a /etc/NetworkManager
 cd /etc/NetworkManager
 tar -xzf system-connections.tar.gz
-systemctl start NetworkManager.service 
+systemctl start NetworkManager.service
 ```
 
 ### Teclado
