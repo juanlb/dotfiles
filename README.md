@@ -52,6 +52,7 @@
 * Postman
 * TeamViewer Host (desde el sitio, es .deb)
 * Catfish (desde AppCenter)
+* ThinkPad Keyboard
 
 # Generales
 
@@ -312,6 +313,33 @@ Terminal=false
 Type=Application
 Categories=GNOME;Application;Development;
 StartupNotify=true
+```
+
+### ThinkPad Keyboard
+Crear este archivo (leer el contenido, porque hay que crear otro más):
+`ThinkPad_keyboard.sh`
+Contenido:
+```
+thinkpad_keyboard.sh 
+#!/bin/bash
+
+# IJKL as Arrows with CapsLk
+## ~/.xmodmap 
+# keycode 66 = Mode_switch
+# keysym i = i I Up
+# keysym l = l L Right
+# keysym k = k K Down
+# keysym j = j J Left
+
+/usr/bin/xmodmap  ~/.xmodmap 
+
+
+# Increase speed of TrackPoint acceleration
+
+/usr/bin/xinput  --set-prop 11 278 1.0
+
+# to see conf
+# xinput --list-props 11 
 ```
 
 ### Balsamiq
