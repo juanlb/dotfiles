@@ -112,6 +112,11 @@ Y luego entrando en `vim` ejecutar:
 ```
 :PlugInstall
 ```
+## Remover Windows + L lock screen
+```
+gsettings set org.gnome.settings-daemon.plugins.media-keys screensaver "[]"
+```
+
 ## Terminal
 
 Quitar el Safe Paste:
