@@ -116,6 +116,16 @@ Y luego entrando en `vim` ejecutar:
 ```nistrador de archi
 gsettings set org.gnome.settings-daemon.plugins.media-keys screensaver "[]"
 ```
+## Remover Windows key para ver shorcuts
+
+Entrar en `dconf editor`
+
+Ir a `org.pantheon.desktop.gala.behavior.overlay-action`
+Disable `Use default value` y en `Command value` dejar **vacio**
+
+Referencia: https://elementaryos.stackexchange.com/questions/17168/how-to-disable-keyboard-shortcuts-pop-up-in-juno
+
+
 ## Instalar Elementary Tweaks
 
 ```bash
