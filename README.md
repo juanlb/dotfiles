@@ -125,6 +125,20 @@ Disable `Use default value` y en `Command value` dejar **vacio**
 
 Referencia: https://elementaryos.stackexchange.com/questions/17168/how-to-disable-keyboard-shortcuts-pop-up-in-juno
 
+## Terminal con Windows + T
+
+## Quitar el que viene por defecto:
+`dconf editor`
+org.gnome.settings-daemon.plugins.media-keys.termina
+
+Disable `Default value`
+Remove the `<Super>t` from the input field
+
+## Crear el nuevo shortcut
+
+En `Custom shortcuts`:
+
+`io.elementary.terminal -n` => `Windows + t`
 
 ## Instalar Elementary Tweaks
 
