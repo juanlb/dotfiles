@@ -113,36 +113,10 @@ Y luego entrando en `vim` ejecutar:
 :PlugInstall
 ```
 ## Remover Windows + L lock screen
-```
+```nistrador de archi
 gsettings set org.gnome.settings-daemon.plugins.media-keys screensaver "[]"
 ```
-
-## Terminal
-
-Quitar el Safe Paste:
-https://www.fosslinux.com/496/how-to-disable-unsafe-copy-paste-warning-while-using-terminal-in-elementary-os.htm
-```bash
-sudo apt-get install dconf-tools
-```
-Abrir `dconf`
-* org > pantheon > terminal > settings > unsafe paste alert
-
-https://hyper.is
-```
-gsettings set org.gnome.desktop.default-applications.terminal exec hyper
-gsettings set org.gnome.desktop.default-applications.terminal exec-arg ''
-```
-## TeamSQL
-https://teamsql.io/
-
-
-## Dockerizar Rails apps
-https://github.com/juan-lb/docker-compose-rails
-
-# Configuraciones para Dell XPS 13 (9360)
-
-## Administrador de archivos (Caja) con un solo click
-* https://elementaryos.stackexchange.com/questions/38/configure-files-to-use-double-click
+## Instalar Elementary Tweaks
 
 ```bash
 sudo apt-get install software-properties-common
@@ -150,7 +124,17 @@ sudo add-apt-repository ppa:philip.scott/elementary-tweaks
 sudo apt-get update
 sudo apt-get install elementary-tweaks
 ```
-Luego en el panel de control se verá `Tweaks`
+
+## Terminal
+
+Quitar el Safe Paste:
+Dentro de `Tweaks` buscar `Usafe Paste Alert` Para `Terminal` y desmarcarlo
+
+# Configuraciones para Dell XPS 13 (9360)
+
+## Administrador de archivos (Caja) con un solo click
+
+Usar en el de control: `Tweaks`
 
 * Files
 * Single click
@@ -234,11 +218,11 @@ $ sudo apt-get install \
 $ curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -
 $ sudo apt-key fingerprint 0EBFCD88
 ```
-Para `Loki`
+Para `Hera`
 ```bash
 $ sudo add-apt-repository \
    "deb [arch=amd64] https://download.docker.com/linux/ubuntu \
-   xenial \
+   bionic \
    stable"
 $ sudo apt-get update
 $ sudo apt-get install docker-ce
@@ -396,6 +380,8 @@ sudo apt install indicator-multiload
 
 ### Alt Tab Switcher
 
+**EN HERA YA NO ANDA**
+
 * https://github.com/p0pye/gala-elementary-alt-tab-switcher
 ```bash
 $ sudo add-apt-repository ppa:popye/eos-window-switcher
@@ -409,16 +395,8 @@ Y modificar `preview-in-switcher`
 
 ### Visual Studio Code
 
-#### ctrl+shift+D
-* File > Preferences > Keyboard Shortcuts
-* Editar `keybindings.json`
-```json
-    {
-        "key": "ctrl+shift+d",
-        "command": "editor.action.copyLinesDownAction",
-        "when": "editorTextFocus"
-    }
-```
+Instalar el plugin `Settings Sync`
+El `key` y el `secret` está en Dropbox
 
 ## Configuraciones Elementary-OS
 
@@ -438,6 +416,9 @@ systemctl start NetworkManager.service
 * English (US, International with dead keys)
 
 #### Workspaces dinámicos
+
+**EN HERA NO ANDA MAS**
+
 https://dysonsimmons.com/indicator-workspaces/
 
 #### HotCorners
