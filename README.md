@@ -465,6 +465,25 @@ Settings -> Keyboard -> Shorcuts -> Custom
 ```
 /usr/bin/gedit -> CTRL-G
 ```
+# Problemas con RADEON - ThinkPad T495
+
+Error en `dmesg`:
+```
+FAILED TO WRITE REG 28b4 WAIT REG 28c6
+```
+Hay que hacer update de drivers de video:
+
+```
+sudo apt install --install-recommends linux-generic-hwe-18.04
+
+sudo add-apt-repository ppa:oibaf/graphics-drivers
+sudo apt-get update
+sudo apt-get dist-upgrade
+```
+
+Fuentes:
+https://github.com/pop-os/pop/issues/782#issuecomment-604634230
+https://launchpad.net/~oibaf/+archive/ubuntu/graphics-drivers
 
 ## restart Wifi
 
