@@ -355,6 +355,19 @@ thinkpad_keyboard.sh
 # xinput --list-props 11 
 ```
 
+UPDATE: si el archivo se llama `~/.Xmodmap`, la configuración se carga sola
+
+## Quilombo Thinkpad T495 Radeon 
+Agregar en:
+```
+/etc/default/grub
+```
+esto:
+```
+GRUB_CMDLINE_LINUX_DEFAULT="quiet splash amd_iommu=off"
+```
+el asunto es agregar esto `amd_iommu=off`
+
 ### Balsamiq
 
 Instalar WineHQ
@@ -446,6 +459,7 @@ systemctl start NetworkManager.service
 https://dysonsimmons.com/indicator-workspaces/
 
 #### HotCorners
+GRUB_CMDLINE_LINUX_DEFAULT="quiet splash amd_iommu=off"
 
 Nothing-Nothing
 Multitasking-Nothing
