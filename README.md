@@ -56,6 +56,21 @@
 
 # Generales
 
+# Bateria DELL 
+
+## Matar el bluetooth
+´´´
+rfkill block bluetooth
+´´´
+
+## Agregar slimbook battery
+
+Para elementary, agregar ´notificatins´
+
+## Powertop
+usar ´--auto-tune´ y ponerlo en el inicio
+
+
 ## ZSH
 * https://github.com/robbyrussell/oh-my-zsh/wiki/Installing-ZSH#install-and-set-up-zsh-as-default
 
