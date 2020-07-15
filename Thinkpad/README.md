@@ -34,3 +34,24 @@ sudo powertop --auto-tune
 ```
 
 Install TLPGUI
+
+## Call powertop auto-tune automatically at boot time
+
+On systems using systemd as startup manager (like Ubuntu) install it as a service:
+```
+cat << EOF | sudo tee /etc/systemd/system/powertop.service
+[Unit]
+Description=PowerTOP auto tune
+
+[Service]
+Type=idle
+Environment="TERM=dumb"
+ExecStart=/usr/sbin/powertop --auto-tune
+
+[Install]
+WantedBy=multi-user.target
+EOF
+
+systemctl daemon-reload
+systemctl enable powertop.service
+```
