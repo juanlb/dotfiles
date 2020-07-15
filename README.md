@@ -109,6 +109,13 @@ Dropbox/homejuanlb/.aws
 ```
 
 ## aws cli
+### desde Hera:
+```
+sudo apt install jq awscli
+```
+
+### Viejo
+
 ```bash
 sudo apt-get install python-pip
 pip install awscli --upgrade --user
