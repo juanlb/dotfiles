@@ -1,0 +1,47 @@
+[user]
+	email = juan.la.battaglia@bytelion.com
+	name = juan.battaglia
+
+[core]
+  pager = delta
+[interactive]
+  diffFilter = delta --color-only
+[delta]
+  plus-color = "#012800"
+  minus-color = "#340001"
+  syntax-theme = Nord
+  #features = line-numbers
+  hunk-header-style = omit
+  # features = side-by-side line-numbers decorations
+  #features = unobstrusive-line-numbers decorations
+  whitespace-error-style = 22 reverse
+  features = line-numbers decorations
+  plus-style = syntax "#003800"
+  minus-style = syntax "#3f0001"
+  #side-by-side = true
+  #line-numbers-left-format = ""
+  #line-numbers-right-format = "│ "
+[delta "unobtrusive-line-numbers"]
+    line-numbers = true
+    line-numbers-minus-style = "#444444"
+    line-numbers-zero-style = "#444444"
+    line-numbers-plus-style = "#444444"
+    line-numbers-left-format = "{nm:>4}┊"
+    line-numbers-right-format = "{np:>4}│"
+    line-numbers-left-style = blue
+    line-numbers-right-style = blue
+[delta "decorations"]
+  commit-decoration-style = bold yellow box ul
+  file-style = bold yellow ul
+  file-decoration-style = none
+  hunk-header-decoration-style = yellow box
+[delta "decorations"]
+    commit-decoration-style = bold yellow box ul
+    file-style = bold yellow ul
+    file-decoration-style = none
+    hunk-header-decoration-style = cyan box ul
+[delta "line-numbers"]
+    line-numbers-left-style = cyan
+    line-numbers-right-style = cyan
+    line-numbers-minus-style = 124
+    line-numbers-plus-style = 28

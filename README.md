@@ -70,6 +70,19 @@ Para elementary, agregar ´notificatins´
 ## Powertop
 usar ´--auto-tune´ y ponerlo en el inicio
 
+## Git diff mas lindo
+ 
+Se usa `delta`:
+
+- https://github.com/dandavison/delta
+
+se instala como `.deb` desde acá:
+
+- https://github.com/barnumbirr/delta-debian/releases (usar la `buster`)
+
+la configuración está en:
+
+`Github/delta/.gitconfig` y se copia en `~/`
 
 ## ZSH
 * https://github.com/robbyrussell/oh-my-zsh/wiki/Installing-ZSH#install-and-set-up-zsh-as-default
