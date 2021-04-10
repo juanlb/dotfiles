@@ -97,3 +97,20 @@ alias awsregistrylogin_teytu='`aws ecr get-login --no-include-email --region us-
 alias docker-stats='docker stats $(docker ps --format={{.Names}})'
 
 unsetopt share_history
+
+export PATH=/home/juanlb/.rbenv/bin:$PATH
+eval "$(rbenv init -)"
+
+## NVM
+function loadnvm {
+ export NVM_DIR="$HOME/.nvm"
+ [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+ [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+ nvm use
+}
+
+
+export YVM_DIR=/home/juanlb/.yvm
+[ -r $YVM_DIR/yvm.sh ] && . $YVM_DIR/yvm.sh
+
+export BUNDLER_EDITOR=/usr/bin/code
