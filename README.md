@@ -127,6 +127,13 @@ Dropbox/homejuanlb/.aws
 sudo apt install jq awscli
 ```
 
+## Flameshot
+
+```
+apt install flameshot
+```
+Desde shortcuts asignar `/usr/bin/flameshot gui` a `print` (se reasigna solo)
+
 ### Viejo
 
 ```bash
