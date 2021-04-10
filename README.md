@@ -84,6 +84,10 @@ la configuración está en:
 
 `Github/delta/.gitconfig` y se copia en `~/`
 
+## Todos los iconos en wingpanel
+
+- https://github.com/Lafydev/wingpanel-indicator-ayatana
+
 ## ZSH
 * https://github.com/robbyrussell/oh-my-zsh/wiki/Installing-ZSH#install-and-set-up-zsh-as-default
 
