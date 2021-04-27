@@ -158,6 +158,17 @@ Y luego entrando en `vim` ejecutar:
 ```
 :PlugInstall
 ```
+## Volumen bluetooth con el Bose
+```
+sudo ln -s /home/juanlb/Projects/dotfiles/scripts/bose_bluetooth_volume/volume.rb /usr/local/bin/vol
+```
+
+# Mapear JKIL a flechas:
+```
+sudo ln -s /home/juanlb/Projects/dotfiles/scripts/map_JKIL_to_arrows/think /usr/local/bin/think
+```
+
+
 ## Remover Windows + L lock screen
 ```nistrador de archi
 gsettings set org.gnome.settings-daemon.plugins.media-keys screensaver "[]"

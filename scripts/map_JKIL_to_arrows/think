@@ -1,0 +1,7 @@
+ #!/bin/bash
+
+xmodmap -e "keycode 66 = Mode_switch"
+xmodmap -e "keysym i = i I Up"
+xmodmap -e "keysym l = l L Right"
+xmodmap -e "keysym k = k K Down"
+xmodmap -e "keysym j = j J Left"
