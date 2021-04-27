@@ -163,11 +163,16 @@ Y luego entrando en `vim` ejecutar:
 sudo ln -s /home/juanlb/Projects/dotfiles/scripts/bose_bluetooth_volume/volume.rb /usr/local/bin/vol
 ```
 
-# Mapear JKIL a flechas:
+## Mapear JKIL a flechas:
 ```
 sudo ln -s /home/juanlb/Projects/dotfiles/scripts/map_JKIL_to_arrows/think /usr/local/bin/think
 ```
 
+## Toggle seconds on Elementary clock
+Mostrar/Ocultar segundos en el reloj de la barra de arriba
+```
+sudo ln -s /home/juanlb/Projects/dotfiles/scripts/toggle_seconds_on_elementary_clock/seconds /usr/local/bin/seconds
+```
 
 ## Remover Windows + L lock screen
 ```nistrador de archi

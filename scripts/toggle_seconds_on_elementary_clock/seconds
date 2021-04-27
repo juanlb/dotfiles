@@ -1,0 +1,10 @@
+#!/bin/bash
+
+VAL=$(gsettings get io.elementary.desktop.wingpanel.datetime clock-show-seconds)
+
+if [ $VAL == 'true' ];then
+  gsettings set io.elementary.desktop.wingpanel.datetime clock-show-seconds false
+else
+  gsettings set io.elementary.desktop.wingpanel.datetime clock-show-seconds true
+fi
+
