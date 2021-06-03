@@ -163,6 +163,11 @@ Y luego entrando en `vim` ejecutar:
 sudo ln -s /home/juanlb/Projects/dotfiles/scripts/bose_bluetooth_volume/volume.rb /usr/local/bin/vol
 ```
 
+## Docker TAGS (script para traer tags de un registry de docker)
+```
+sudo ln -s /home/juanlb/Projects/dotfiles/scripts/docker/docker_tags /usr/local/bin/docker_tags
+```
+
 ## Mapear JKIL a flechas:
 ```
 sudo ln -s /home/juanlb/Projects/dotfiles/scripts/map_JKIL_to_arrows/think /usr/local/bin/think
