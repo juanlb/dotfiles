@@ -1,0 +1,8 @@
+#!/bin/bash
+
+if [ -z "$1" ]; then
+  echo "text-scaling-factor:    " `gsettings get org.gnome.desktop.interface text-scaling-factor`
+else
+  gsettings set org.gnome.desktop.interface text-scaling-factor $1
+fi
+

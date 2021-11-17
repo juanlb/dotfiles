@@ -252,13 +252,20 @@ libinput-gestures-setup autostart
 ```
 
 ## Escalado de pantalla
-Copiar el archivo:
-```bash
-Github/hidpi/scale_screen.sh
-# copiar a:
-/usr/local/bin/scale_screen.sh
+Armar el link simbolico:
 ```
-Agreagarlo en `Startup Apps`
+  ln -s /home/juanlb/Projects/dotfiles/hidpi/scale_screen /usr/local/bin/scale_screen
+
+```
+
+Se puede usar desde cualquier lado, y cambiar el tamaño general de la letra desde linea de código.
+
+Un lindo número es 1.5:
+```
+scale_screen 1.5
+```
+
+Sin parámetros muestra el factor actual
 
 ## Bateria
 Powertop y TLP
