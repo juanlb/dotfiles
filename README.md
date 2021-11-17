@@ -491,6 +491,17 @@ sudo apt install indicator-multiload
 
 ### Alt Tab Switcher
 
+### UPDATE - éste anda bien en Elementary: 5.1.7
+
+https://github.com/markstory/gala-alt-tab-plus
+
+Hay que instalar:
+```
+sudo apt install elementary-sdk libclutter-1.0-dev libwnck-3-dev cmake
+```
+Seguir las instrucciones y reiniciar
+
+
 **EN HERA YA NO ANDA**
 
 * https://github.com/p0pye/gala-elementary-alt-tab-switcher
