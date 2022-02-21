@@ -17,7 +17,7 @@ sudo apt upgrade
 ```
 
 ```
-sudo apt install -y zsh htop vim git openssh-server gdebi dconf-editor software-properties-common awscli jq xsel gedit
+sudo apt install -y zsh htop vim git openssh-server gdebi dconf-editor software-properties-common awscli jq xsel gedit pavucontrol
 sudo apt install -y filezilla gpaste barrier flameshot caffeine mysql-client libreoffice-calc
 ```
 * reboot
