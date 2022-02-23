@@ -17,8 +17,8 @@ sudo apt upgrade
 ```
 
 ```
-sudo apt install -y zsh htop vim git openssh-server gdebi dconf-editor software-properties-common awscli jq xsel gedit pavucontrol
-sudo apt install -y filezilla gpaste barrier flameshot caffeine mysql-client libreoffice-calc
+sudo apt install -y zsh htop vim git openssh-server gdebi dconf-editor software-properties-common awscli jq xsel apt-transport-https
+sudo apt install -y filezilla gpaste barrier flameshot caffeine mysql-client kolourpaint libreoffice-calc gedit pavucontrol ffmpeg vlc
 ```
 * reboot
 ```
@@ -28,6 +28,22 @@ chsh -s $(which zsh)
 ```
 * reboot
 
+### Tecla Windows o Super para menu
+
+`dconf editor`
+- `org.pantheon.desktop.gala.behavior.overlay-action`
+Setear `io.elementary.wingpanel --toggle-indicator=app-launcher`
+
+### Agregar Windows/Super J y K para mover workspaces
+- switch-to-workspace-left
+`['<Super>Left', '<Super>j']`
+
+- switch-to-workspace-right
+`['<Super>Right', '<Super>k']`
+
+### Quitar Windows/Super L para lockar pantalla
+- org.gnome.settings-daemon.plugins.media-keys screensaver
+`['']`
 ### rbenv
 ```
 sudo apt install -y rbenv
@@ -130,7 +146,6 @@ sudo tlp start
 ### OpenVPN 3
 ```
 cd /tmp
-sudo apt install -y apt-transport-https
 wget https://swupdate.openvpn.net/repos/openvpn-repo-pkg-key.pub
 sudo apt-key add openvpn-repo-pkg-key.pub
 DISTRO=focal
@@ -152,3 +167,23 @@ se instala como `.deb` desde acá:
 la configuración está en:
 
 `Github: juanlb/dotfiles/delta/.gitconfig` y se copia en `~/`
+
+### Indicador de Workspace en WingPanel
+
+Source: https://entornosgnulinux.com/2020/10/10/indicador-workspace-wall-en-elementary-os-hera-odin/
+```
+sudo add-apt-repository ppa:yunnxx/elementary
+sudo apt install wingpanel-indicator-wswalls
+gsettings set org.gnome.desktop.wm.preferences workspace-names "['web','work','brave','code']"
+```
+Log out y Login
+
+### Sublime text 
+
+```
+wget -qO - https://download.sublimetext.com/sublimehq-pub.gpg | sudo apt-key add -
+echo "deb https://download.sublimetext.com/ apt/stable/" | sudo tee /etc/apt/sources.list.d/sublime-text.list
+sudo apt update
+sudo apt install -y sublime-text
+```
+
