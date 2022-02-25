@@ -28,6 +28,10 @@ chsh -s $(which zsh)
 ```
 * reboot
 
+### Gedit con Ctrl + Tab para mover Tabs
+
+https://github.com/jefferyto/gedit-control-your-tabs
+
 ### Tecla Windows o Super para menu
 
 `dconf editor`
@@ -44,6 +48,19 @@ Setear `io.elementary.wingpanel --toggle-indicator=app-launcher`
 ### Quitar Windows/Super L para lockar pantalla
 - org.gnome.settings-daemon.plugins.media-keys screensaver
 `['']`
+
+### Elementary Tweaks
+
+```
+sudo add-apt-repository ppa:philip.scott/pantheon-tweaks
+sudo apt update
+sudo apt install pantheon-tweaks
+```
+
+#### Activar Force Dark Stylesheet
+
+En `Tweaks` activar `Force to use dark stylesheet`
+
 ### rbenv
 ```
 sudo apt install -y rbenv
@@ -51,6 +68,13 @@ git clone https://github.com/rbenv/ruby-build.git "$(rbenv root)"/plugins/ruby-b
 rbenv install 2.7.5
 rbenv global 2.7.5
 ```
+
+#### For VScode
+```
+gem install rubocop
+gem install rufo
+```
+
 
 ### git flow
 ```
