@@ -17,7 +17,7 @@ sudo apt upgrade
 ```
 
 ```
-sudo apt install -y zsh htop vim git openssh-server gdebi dconf-editor software-properties-common awscli jq xsel apt-transport-https
+sudo apt install -y zsh htop vim git openssh-server gdebi dconf-editor software-properties-common awscli jq xsel apt-transport-https snapd
 sudo apt install -y filezilla gpaste barrier flameshot caffeine mysql-client kolourpaint libreoffice-calc gedit pavucontrol ffmpeg vlc
 ```
 * reboot
@@ -159,14 +159,6 @@ Bajar el `.deb` correcto (ojo que está el de Hera)
 Y después agregar en `startup app`:
 `/usr/lib/x86_64-linux-gnu/indicator-application/indicator-application-service`
 
-### TLP
-```
-sudo add-apt-repository ppa:linrunner/tlp
-sudo apt update
-sudo apt install tlp tlp-rdw
-sudo tlp start
-```
-
 ### OpenVPN 3
 ```
 cd /tmp
@@ -209,5 +201,41 @@ wget -qO - https://download.sublimetext.com/sublimehq-pub.gpg | sudo apt-key add
 echo "deb https://download.sublimetext.com/ apt/stable/" | sudo tee /etc/apt/sources.list.d/sublime-text.list
 sudo apt update
 sudo apt install -y sublime-text
+```
+
+### Calendario
+Source: https://github.com/elementary/calendar/issues/712
+
+- You only need to add an App Password here https://myaccount.google.com/apppasswords
+- From there, add an app password by choosing which app you'd use (in this case it's Calendar) and where you sync it (in this case it's Others)
+- Then Google will generate a random password for you
+- Copy it and use the password to login with your email address in the Calendar App on elementary
+
+## Bateria:
+
+- auto-cpufreq
+- slimbookbattery (no slimbookamdcontroller)
+
+### auto-cpufreq
+Source: https://github.com/AdnanHodzic/auto-cpufreq 
+```
+sudo snap install auto-cpufreq
+sudo auto-cpufreq --install
+```
+
+### TLP (Esto no, no es compatible auto-cpufreq)
+```
+# sudo add-apt-repository ppa:linrunner/tlp
+# sudo apt update
+# sudo apt install tlp tlp-rdw
+# sudo tlp start
+```
+
+### slimbookbattery (no slimbookamdcontroller)
+```
+sudo add-apt-repository ppa:slimbook/slimbook
+sudo apt update
+sudo apt install -y slimbookbattery
+# sudo apt install -y slimbookamdcontroller (este no)
 ```
 
