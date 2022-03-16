@@ -124,6 +124,17 @@ En `Custom shortcuts`:
 
 `io.elementary.terminal -n` => `Windows + t`
 
+
+### Acceso directo Notificaciones Windows/Super N
+
+Shortcuts:
+`io.elementary.wingpanel -t messages` => `Super + N`
+
+### Acceso directo Calendario Windows/Super C
+
+Shortcuts:
+`io.elementary.wingpanel -t datetime` => `Super + C`
+
 ### Flameshot
 
 `dconf editor`

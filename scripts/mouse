@@ -1,0 +1,13 @@
+#!/bin/bash
+
+VALUE=$(gsettings get org.gnome.desktop.peripherals.mouse left-handed)
+
+if [ $VALUE == 'true' ]; then
+  echo 'Mouse'
+  NEWVALUE='false'
+else
+  echo 'Touchpad'
+  NEWVALUE='true'
+fi
+
+gsettings set org.gnome.desktop.peripherals.mouse left-handed $NEWVALUE
