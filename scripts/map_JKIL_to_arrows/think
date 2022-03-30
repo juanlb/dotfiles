@@ -5,3 +5,9 @@ xmodmap -e "keysym i = i I Up"
 xmodmap -e "keysym l = l L Right"
 xmodmap -e "keysym k = k K Down"
 xmodmap -e "keysym j = j J Left"
+
+# Numpad
+xmodmap -e 'keycode 87 = Left'
+xmodmap -e 'keycode 88 = Down'
+xmodmap -e 'keycode 89 = Right'
+xmodmap -e 'keycode 84 = Up'
