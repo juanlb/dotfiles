@@ -250,3 +250,15 @@ sudo apt install -y slimbookbattery
 # sudo apt install -y slimbookamdcontroller (este no)
 ```
 
+### Keyd
+source: https://github.com/rvaiya/keyd
+
+En el directorio `keyd` están las configuraciones
+
+### Input Remapper
+soucer: https://github.com/sezanzeb/input-remapper
+En Thinkpad uso configuración de mouse para zurdos, por los botones del trackpad
+
+Usado para remapear el mouse físico:
+- Button RIGHT => BTN_LEFT
+- Button LEFT => BTN_RIGHT
