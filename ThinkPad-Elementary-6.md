@@ -135,6 +135,12 @@ Shortcuts:
 Shortcuts:
 `io.elementary.wingpanel -t datetime` => `Super + C`
 
+
+### Acceso directo Volumen Windows/Super V
+
+Shortcuts:
+`io.elementary.wingpanel -t sound` => `Super + V`
+
 ### Flameshot
 
 `dconf editor`
@@ -257,8 +263,10 @@ En el directorio `keyd` están las configuraciones
 
 ### Input Remapper
 soucer: https://github.com/sezanzeb/input-remapper
-En Thinkpad uso configuración de mouse para zurdos, por los botones del trackpad
+En Thinkpad remapeo los botones del trackpad, para que izquierda sea derecha.
 
-Usado para remapear el mouse físico:
+Así si enchufo un mouse externo, simpre anda bien.
+
+Usado para remapear los botones del trackpad (TPSS/2 Elan Trackpoint):
 - Button RIGHT => BTN_LEFT
 - Button LEFT => BTN_RIGHT
