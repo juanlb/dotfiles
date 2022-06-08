@@ -270,3 +270,11 @@ Así si enchufo un mouse externo, simpre anda bien.
 Usado para remapear los botones del trackpad (TPSS/2 Elan Trackpoint):
 - Button RIGHT => BTN_LEFT
 - Button LEFT => BTN_RIGHT
+
+### VirtualBox en 20.04
+
+Source: https://askubuntu.com/questions/1296941/kernel-driver-not-installed-when-trying-to-start-a-virtualbox-vm-in-ubuntu-20
+
+```
+sudo apt-get install dkms build-essential linux-headers-generic -y ; sudo apt-get install linux-headers-$(uname -r) -y; sudo apt install --reinstall virtualbox -y
+```
