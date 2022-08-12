@@ -256,6 +256,15 @@ sudo apt install -y slimbookbattery
 # sudo apt install -y slimbookamdcontroller (este no)
 ```
 
+### Brightness Controller
+source: https://linuxhint.com/install-desktop-dimmer-ubuntu/
+
+```
+sudo add-apt-repository ppa:apandada1/brightness-controller
+sudo apt update
+sudo apt install brightness-controller
+```
+
 ### Keyd
 source: https://github.com/rvaiya/keyd
 
