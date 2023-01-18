@@ -241,9 +241,9 @@
                 "type": "basic"
               },
               {
-                "description": "CapsLock + g = Control + F4 (Next open window on workspace",
+                "description": "CapsLock + m = TextMate",
                 "from": {
-                  "key_code": "g",
+                  "key_code": "m",
                   "modifiers": {
                     "mandatory": [
                       "left_command",
@@ -258,10 +258,7 @@
                 },
                 "to": [
                   {
-                    "key_code": "f4",
-                    "modifiers": [
-                      "left_control"
-                    ]
+                    "shell_command": "open -n -a TextMate"
                   }
                 ],
                 "type": "basic"
@@ -286,6 +283,32 @@
                   {
                     "key_code": "escape",
                     "modifiers": []
+                  }
+                ],
+                "type": "basic"
+              },
+              {
+                "description": "CapsLock + g = Option + Tab (AltTab app)",
+                "from": {
+                  "key_code": "g",
+                  "modifiers": {
+                    "mandatory": [
+                      "left_command",
+                      "left_control",
+                      "left_option",
+                      "left_shift"
+                    ],
+                    "optional": [
+                      "any"
+                    ]
+                  }
+                },
+                "to": [
+                  {
+                    "key_code": "tab",
+                    "modifiers": [
+                      "left_option"
+                    ]
                   }
                 ],
                 "type": "basic"
