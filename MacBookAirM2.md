@@ -10,6 +10,7 @@
 - Mega
 - Docker
 - Brave
+- iTerm2
 
 ## Mission Control
 - Desactivar `Automatically rearrange Spaces based on most recent use`
