@@ -11,6 +11,7 @@
 - Docker
 - Brave
 - iTerm2
+- Grammarly
 
 ## Mission Control
 - Desactivar `Automatically rearrange Spaces based on most recent use`
