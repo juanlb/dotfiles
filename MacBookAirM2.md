@@ -13,6 +13,13 @@
 - iTerm2
 - Grammarly
 
+## iTerm
+Para que funcione la navegación de `home` y `end` en iTerm, hay que ir a `Preferences > Profiles > Keys` y agregar los shortcuts:
+- `home + right_arrow` = `0x05`
+- `home + left_arrow` = `0x01`
+
+Fuente: https://apple.stackexchange.com/questions/389525/how-do-i-do-home-and-end-in-iterm2
+
 ## Mission Control
 - Desactivar `Automatically rearrange Spaces based on most recent use`
 
