@@ -245,7 +245,7 @@
                 "type": "basic"
               },
               {
-                "description": "CapsLock + m = TextMate",
+                "description": "CapsLock + m = VSCode",
                 "from": {
                   "key_code": "m",
                   "modifiers": {
@@ -262,7 +262,7 @@
                 },
                 "to": [
                   {
-                    "shell_command": "open -n -a TextMate"
+                    "shell_command": "/usr/local/bin/code -n"
                   }
                 ],
                 "type": "basic"
