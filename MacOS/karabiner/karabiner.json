@@ -292,6 +292,33 @@
                 "type": "basic"
               },
               {
+                "description": "CapsLock + p = 1Password on brave",
+                "from": {
+                  "key_code": "p",
+                  "modifiers": {
+                    "mandatory": [
+                      "left_command",
+                      "left_control",
+                      "left_option",
+                      "left_shift"
+                    ],
+                    "optional": [
+                      "any"
+                    ]
+                  }
+                },
+                "to": [
+                  {
+                    "key_code": "x",
+                    "modifiers": [
+                      "left_command",
+                      "left_shift"
+                    ]
+                  }
+                ],
+                "type": "basic"
+              },
+              {
                 "description": "CapsLock + g = Option + Tab (AltTab app)",
                 "from": {
                   "key_code": "g",
