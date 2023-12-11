@@ -44,33 +44,6 @@
             ]
           },
           {
-            "description": "Prevent accidental ⌘Q (select all safeguard)",
-            "manipulators": [
-              {
-                "from": {
-                  "key_code": "q",
-                  "modifiers": {
-                    "mandatory": [
-                      "left_command"
-                    ],
-                    "optional": [
-                      "any"
-                    ]
-                  }
-                },
-                "to": [
-                  {
-                    "key_code": "a",
-                    "modifiers": [
-                      "left_command"
-                    ]
-                  }
-                ],
-                "type": "basic"
-              }
-            ]
-          },
-          {
             "description": "Arrows",
             "manipulators": [
               {
@@ -319,6 +292,29 @@
                 "type": "basic"
               },
               {
+                "description": "Prevent accidental ⌘Q (select all safeguard)",
+                "from": {
+                  "key_code": "q",
+                  "modifiers": {
+                    "mandatory": [
+                      "left_command"
+                    ],
+                    "optional": [
+                      "any"
+                    ]
+                  }
+                },
+                "to": [
+                  {
+                    "key_code": "a",
+                    "modifiers": [
+                      "left_command"
+                    ]
+                  }
+                ],
+                "type": "basic"
+              },
+              {
                 "description": "CapsLock + p = 1Password on brave",
                 "from": {
                   "key_code": "p",
@@ -502,7 +498,7 @@
                 "type": "basic"
               },
               {
-                "description": "CapsLock + ' = Command + c",
+                "description": "CapsLock + ' = Command + v",
                 "from": {
                   "key_code": "quote",
                   "modifiers": {
@@ -787,19 +783,6 @@
                   }
                 ],
                 "type": "basic"
-              },
-              {
-                "description": "F5 = xbar mute mic plugin",
-                "from": {
-                  "key_code": "f5",
-                  "modifiers": {}
-                },
-                "to": [
-                  {
-                    "shell_command": "~/Library/Application\\ Support/xbar/plugins/001-microphone.sh switch && open xbar://app.xbarapp.com/refreshPlugin\\?path=001-microphone.sh"
-                  }
-                ],
-                "type": "basic"
               }
             ]
           }
@@ -887,16 +870,6 @@
           "to": [
             {
               "apple_vendor_keyboard_key_code": "spotlight"
-            }
-          ]
-        },
-        {
-          "from": {
-            "key_code": "f5"
-          },
-          "to": [
-            {
-              "key_code": "f5"
             }
           ]
         },
