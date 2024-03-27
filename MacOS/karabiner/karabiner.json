@@ -218,7 +218,7 @@
                 "type": "basic"
               },
               {
-                "description": "CapsLock + h = Clipboard Manager Maccy",
+                "description": "CapsLock + h = Clipboard Manager ~Maccy~ Raycast",
                 "from": {
                   "key_code": "h",
                   "modifiers": {
@@ -240,6 +240,30 @@
                       "left_command",
                       "left_shift"
                     ]
+                  }
+                ],
+                "type": "basic"
+              },
+              {
+                "description": "CapsLock + y = delete",
+                "from": {
+                  "key_code": "y",
+                  "modifiers": {
+                    "mandatory": [
+                      "left_command",
+                      "left_control",
+                      "left_option",
+                      "left_shift"
+                    ],
+                    "optional": [
+                      "any"
+                    ]
+                  }
+                },
+                "to": [
+                  {
+                    "key_code": "delete_or_backspace",
+                    "modifiers": []
                   }
                 ],
                 "type": "basic"
