@@ -1,0 +1,10 @@
+# Gemfile
+source 'https://rubygems.org'
+
+ruby '3.1.4'
+
+# Ruby LSP
+gem 'rubocop'
+gem 'ruby-lsp'
+gem 'rubocop-rails-omakase'
+gem 'htmlbeautifier'
